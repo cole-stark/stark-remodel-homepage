@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/StarkRemodel_2024.png";
@@ -7,7 +8,7 @@ const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#process", label: "Process" },
   { href: "#reviews", label: "Reviews" },
-  { href: "#projects", label: "Projects" },
+  { href: "/gallery", label: "Gallery", isRoute: true },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -27,17 +28,26 @@ export function Header() {
             />
           </a>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-foreground/80 hover:text-foreground font-medium transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.isRoute ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-foreground/80 hover:text-foreground font-medium transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-foreground/80 hover:text-foreground font-medium transition-colors"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
           </nav>
 
           {/* Desktop CTA */}
@@ -77,16 +87,27 @@ export function Header() {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border">
             <nav className="flex flex-col gap-2">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-muted rounded-lg font-medium transition-colors"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.isRoute ? (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-muted rounded-lg font-medium transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-muted rounded-lg font-medium transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <div className="mt-4 px-4">
                 <Button asChild className="w-full">
                   <a href="#contact">Schedule a Free Consultation</a>
