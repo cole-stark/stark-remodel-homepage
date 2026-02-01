@@ -1,4 +1,5 @@
 import { Home, MessageCircle, Ruler, DollarSign } from "lucide-react";
+import tylerImage from "@/assets/meet-tyler.heic";
 
 const trustPoints = [
   {
@@ -44,11 +45,22 @@ export function WhyTrustUs() {
         </div>
 
         {/* About Tyler */}
-        <div className="max-w-3xl mx-auto text-center bg-card rounded-2xl p-8 border border-border">
-          <h3 className="text-xl font-semibold text-foreground mb-4">Meet Tyler</h3>
-          <p className="text-muted-foreground leading-relaxed">
-            Tyler is the owner and lead contractor at Stark Remodel. He takes pride in treating every home like his own — showing up on time, communicating clearly, and delivering quality work you'll love for years to come.
-          </p>
+        <div className="max-w-3xl mx-auto bg-card rounded-2xl p-8 border border-border">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-primary/20">
+              <img
+                src={tylerImage}
+                alt="Tyler, owner of Stark Remodel"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <h3 className="text-xl font-semibold text-foreground mb-4">Meet Tyler</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Tyler is the owner and lead contractor at Stark Remodel. He takes pride in treating every home like his own — showing up on time, communicating clearly, and delivering quality work you'll love for years to come.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
