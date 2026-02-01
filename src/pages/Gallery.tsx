@@ -14,6 +14,14 @@ import doubleVanity from "@/assets/gallery/double-vanity.jpg";
 import soakingTub from "@/assets/gallery/soaking-tub.jpg";
 import vesselSink from "@/assets/gallery/vessel-sink.jpg";
 import patternedShower from "@/assets/gallery/patterned-shower.jpg";
+import kitchenIsland from "@/assets/gallery/kitchen-island.jpg";
+import greenBathroom from "@/assets/gallery/green-bathroom.jpg";
+import bathroomTileShower from "@/assets/gallery/bathroom-tile-shower.jpg";
+import stoveBacksplash from "@/assets/gallery/stove-backsplash.jpg";
+import doubleSinkVanity from "@/assets/gallery/double-sink-vanity.jpg";
+import hardwoodFlooring from "@/assets/gallery/hardwood-flooring.jpg";
+import patioDeck from "@/assets/gallery/patio-deck.jpg";
+import subwayTileShower from "@/assets/gallery/subway-tile-shower.jpg";
 
 // Existing project images
 import beforeImage from "@/assets/before1.jpg";
@@ -23,12 +31,20 @@ const galleryImages = [
   { src: elevatedDeck, alt: "Elevated deck with black railings and white skirting", category: "Deck" },
   { src: backyardDeck, alt: "Large backyard deck with brown composite railings", category: "Deck" },
   { src: porchDeck, alt: "Front porch with composite decking", category: "Deck" },
+  { src: patioDeck, alt: "Patio deck with dining furniture under shade tree", category: "Deck" },
   { src: soakingTub, alt: "Freestanding soaking tub with blue wainscoting", category: "Bathroom" },
   { src: doubleVanity, alt: "Modern double vanity bathroom with vessel sinks", category: "Bathroom" },
   { src: vesselSink, alt: "Custom vessel sink with hexagon tile backsplash", category: "Bathroom" },
   { src: patternedShower, alt: "Walk-in shower with patterned tile feature wall", category: "Bathroom" },
+  { src: greenBathroom, alt: "Sage green bathroom with pedestal sink and tub", category: "Bathroom" },
+  { src: bathroomTileShower, alt: "Bathroom with tile shower and marble vanity", category: "Bathroom" },
+  { src: doubleSinkVanity, alt: "Double sink vanity with dark wood and marble top", category: "Bathroom" },
+  { src: subwayTileShower, alt: "Walk-in shower with white subway tile and niches", category: "Bathroom" },
+  { src: kitchenIsland, alt: "Open kitchen with island seating and pendant lights", category: "Kitchen" },
   { src: kitchenCorner, alt: "Kitchen corner with floating shelves and marble countertops", category: "Kitchen" },
   { src: kitchenBacksplash, alt: "Kitchen with white subway tile backsplash", category: "Kitchen" },
+  { src: stoveBacksplash, alt: "Stovetop with decorative tile medallion backsplash", category: "Kitchen" },
+  { src: hardwoodFlooring, alt: "Kitchen with refinished hardwood flooring", category: "Flooring" },
   { src: afterImage, alt: "Living room with new LVP flooring and shiplap walls", category: "Flooring" },
   { src: beforeImage, alt: "Living room before renovation", category: "Before" },
 ];
