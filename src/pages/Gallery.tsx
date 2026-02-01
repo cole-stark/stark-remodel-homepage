@@ -23,10 +23,6 @@ import hardwoodFlooring from "@/assets/gallery/hardwood-flooring.jpg";
 import patioDeck from "@/assets/gallery/patio-deck.jpg";
 import subwayTileShower from "@/assets/gallery/subway-tile-shower.jpg";
 
-// Existing project images
-import beforeImage from "@/assets/before1.jpg";
-import afterImage from "@/assets/after1.jpg";
-
 const galleryImages = [
   { src: elevatedDeck, alt: "Elevated deck with black railings and white skirting", category: "Deck" },
   { src: backyardDeck, alt: "Large backyard deck with brown composite railings", category: "Deck" },
@@ -45,8 +41,6 @@ const galleryImages = [
   { src: kitchenBacksplash, alt: "Kitchen with white subway tile backsplash", category: "Kitchen" },
   { src: stoveBacksplash, alt: "Stovetop with decorative tile medallion backsplash", category: "Kitchen" },
   { src: hardwoodFlooring, alt: "Kitchen with refinished hardwood flooring", category: "Flooring" },
-  { src: afterImage, alt: "Living room with new LVP flooring and shiplap walls", category: "Flooring" },
-  { src: beforeImage, alt: "Living room before renovation", category: "Before" },
 ];
 
 const Gallery = () => {
