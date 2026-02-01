@@ -1,16 +1,17 @@
-import { ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import deckImage from "@/assets/deck.jpg";
+import deckImage from "@/assets/deck-example.jpeg";
 import bathroomImage from "@/assets/bathroom-remodel.webp";
 import kitchenImage from "@/assets/kitchen-remodel.jpg";
-import flooringImage from "@/assets/after1.jpg";
+import flooringImage from "@/assets/flooring.heic";
+import tileImage from "@/assets/tile-backsplash.heic";
+import otherImage from "@/assets/other.jpeg";
 
 const services = [
   {
     title: "Decks",
     description: "Expand your outdoor living with a custom-built deck designed for your space.",
     image: deckImage,
-    alt: "Custom built wooden deck with modern railings in Central Ohio",
+    alt: "Custom built composite deck with black metal railings overlooking pond in Central Ohio",
   },
   {
     title: "Bathrooms",
@@ -27,14 +28,20 @@ const services = [
   {
     title: "Tile",
     description: "Beautiful tilework for floors, backsplashes, and showers.",
-    image: kitchenImage,
-    alt: "Professional tile installation for kitchen backsplash",
+    image: tileImage,
+    alt: "Professional tile backsplash installation in kitchen",
   },
   {
     title: "Flooring",
     description: "Durable, stylish flooring that transforms any room.",
     image: flooringImage,
-    alt: "New LVP flooring installation in living room",
+    alt: "New hardwood flooring installation in living space",
+  },
+  {
+    title: "Other",
+    description: "Custom built-ins, fireplaces, and specialty projects tailored to your vision.",
+    image: otherImage,
+    alt: "Custom entertainment center with stone fireplace and built-in shelving",
   },
 ];
 
@@ -61,13 +68,7 @@ export function Services() {
               </div>
               <CardContent className="p-5">
                 <h3 className="text-xl font-semibold text-foreground mb-2">{service.title}</h3>
-                <p className="text-muted-foreground mb-4">{service.description}</p>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-1 text-primary font-medium hover:gap-2 transition-all"
-                >
-                  Learn more <ArrowRight className="h-4 w-4" />
-                </a>
+                <p className="text-muted-foreground">{service.description}</p>
               </CardContent>
             </Card>
           ))}
