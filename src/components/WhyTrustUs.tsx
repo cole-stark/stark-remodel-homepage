@@ -1,5 +1,5 @@
 import { Home, MessageCircle, Ruler, DollarSign } from "lucide-react";
-import tylerImage from "@/assets/meet-tyler.heic";
+import tylerImage from "@/assets/meet-tyler.jpg";
 
 const trustPoints = [
   {

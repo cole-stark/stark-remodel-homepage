@@ -2,8 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import deckImage from "@/assets/deck-example.jpeg";
 import bathroomImage from "@/assets/bathroom-remodel.webp";
 import kitchenImage from "@/assets/kitchen-remodel.jpg";
-import flooringImage from "@/assets/flooring.heic";
-import tileImage from "@/assets/tile-backsplash.heic";
+import flooringImage from "@/assets/flooring.jpg";
+import tileImage from "@/assets/tile-backsplash.jpg";
 import otherImage from "@/assets/other.jpeg";
 
 const services = [
