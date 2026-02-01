@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import beforeImage from "@/assets/before1.jpg";
 import afterImage from "@/assets/after1.jpg";
 
@@ -45,6 +47,12 @@ export function BeforeAfter() {
         <p className="text-center text-muted-foreground mt-6 font-medium">
           Living Room Transformation — New Flooring & Wall Treatment
         </p>
+
+        <div className="text-center mt-8">
+          <Button asChild size="lg" variant="outline">
+            <Link to="/gallery">View More Projects</Link>
+          </Button>
+        </div>
       </div>
     </section>
   );
