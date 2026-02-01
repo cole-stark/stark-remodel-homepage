@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/StarkRemodel_2024.png";
 
 export function Footer() {
@@ -47,26 +48,26 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <div className="space-y-2 text-sm">
-              <a
-                href="#services"
+              <Link
+                to="/"
                 className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                Services
-              </a>
-              <a
-                href="#projects"
+                Home
+              </Link>
+              <Link
+                to="/gallery"
                 className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                Projects
-              </a>
+                Gallery
+              </Link>
               <a
-                href="#contact"
+                href="/#contact"
                 className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 Contact
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/StarkRemodel/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
