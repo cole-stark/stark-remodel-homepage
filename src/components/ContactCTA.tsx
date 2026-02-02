@@ -4,27 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 
-const projectTypes = [
-  "Deck",
-  "Bathroom",
-  "Kitchen",
-  "Tile",
-  "Flooring",
-  "Other",
-];
+const projectTypes = ["Deck", "Bathroom", "Kitchen", "Tile", "Flooring", "Other"];
 
-// Web3Forms access key - safe to expose as it only accepts form submissions
-// Replace this with your actual key from https://web3forms.com
-const WEB3FORMS_ACCESS_KEY = "YOUR_ACTUAL_KEY_HERE";
+// Web3Forms access key - this is safe to expose as it only accepts form submissions
+const WEB3FORMS_ACCESS_KEY = "e0616572-f763-4e28-ba61-6f87831c9dd9";
 
 export function ContactCTA() {
   const { toast } = useToast();
@@ -86,9 +72,7 @@ export function ContactCTA() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Left Column - CTA */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Ready to Transform Your Home?
-              </h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Ready to Transform Your Home?</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Get started with a free consultation. No pressure — just honest answers about your project.
               </p>
@@ -118,9 +102,7 @@ export function ContactCTA() {
 
             {/* Right Column - Form */}
             <div className="bg-card rounded-2xl p-6 md:p-8 border border-border">
-              <h3 className="text-xl font-semibold text-foreground mb-6">
-                Request a Free Estimate
-              </h3>
+              <h3 className="text-xl font-semibold text-foreground mb-6">Request a Free Estimate</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <Label htmlFor="name">Name</Label>
@@ -185,9 +167,7 @@ export function ContactCTA() {
                   )}
                 </Button>
 
-                <p className="text-center text-sm text-muted-foreground">
-                  Fast response. No pressure.
-                </p>
+                <p className="text-center text-sm text-muted-foreground">Fast response. No pressure.</p>
               </form>
             </div>
           </div>
