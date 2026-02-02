@@ -39,6 +39,12 @@ import compositeBridgePond from "@/assets/gallery/composite-bridge-pond.jpg";
 import geometricTileNiche from "@/assets/gallery/geometric-tile-niche.jpg";
 import entryStepsWhiteRailing from "@/assets/gallery/entry-steps-white-railing.jpg";
 import greenTileWalkInShower from "@/assets/gallery/green-tile-walk-in-shower.jpg";
+import archedWindowsExterior from "@/assets/gallery/arched-windows-exterior.jpg";
+import patternedTileShower from "@/assets/gallery/patterned-tile-shower.jpg";
+import fireplaceMarbleSurround from "@/assets/gallery/fireplace-marble-surround.jpg";
+import calacattaMarbleShower from "@/assets/gallery/calacatta-marble-shower.jpg";
+import grayDeckBlackRailing from "@/assets/gallery/gray-deck-black-railing.jpg";
+import screenedPorch from "@/assets/gallery/screened-porch.jpg";
 
 const galleryImages = [
   { src: elevatedDeck, alt: "Elevated deck with black railings and white skirting", category: "Deck" },
@@ -46,6 +52,7 @@ const galleryImages = [
   { src: largeDeckWhiteRailing, alt: "Large deck with white railings and wide stairs", category: "Deck" },
   { src: compositeBridgePond, alt: "Composite bridge over backyard pond", category: "Deck" },
   { src: entryStepsWhiteRailing, alt: "Entry steps with white railing and composite treads", category: "Deck" },
+  { src: grayDeckBlackRailing, alt: "Gray composite deck with black metal railings", category: "Deck" },
   { src: luxuryMarbleShower, alt: "Luxury walk-in shower with marble tile and rain showerhead", category: "Bathroom" },
   { src: doubleVanityBlackFixtures, alt: "Double vanity with black fixtures and industrial lighting", category: "Bathroom" },
   { src: modernGlassShower, alt: "Modern glass shower with wave tile and hexagon floor", category: "Bathroom" },
@@ -64,6 +71,8 @@ const galleryImages = [
   { src: blueWainscotingBathroom, alt: "Bathroom with blue wainscoting and glass shower", category: "Bathroom" },
   { src: geometricTileNiche, alt: "Geometric pattern tile with built-in shower niche", category: "Bathroom" },
   { src: greenTileWalkInShower, alt: "Large walk-in shower with green tile and gold fixtures", category: "Bathroom" },
+  { src: patternedTileShower, alt: "Walk-in shower with patterned accent tile wall", category: "Bathroom" },
+  { src: calacattaMarbleShower, alt: "Calacatta marble walk-in shower with hexagon floor", category: "Bathroom" },
   { src: kitchenIsland, alt: "Open kitchen with island seating and pendant lights", category: "Kitchen" },
   { src: kitchenCorner, alt: "Kitchen corner with floating shelves and marble countertops", category: "Kitchen" },
   { src: stoveBacksplash, alt: "Stovetop with decorative tile medallion backsplash", category: "Kitchen" },
@@ -75,6 +84,9 @@ const galleryImages = [
   { src: crownMoldingDetail, alt: "Custom black crown molding detail", category: "Other" },
   { src: wetBarFloatingShelves, alt: "Wet bar with floating shelves and wine fridge", category: "Other" },
   { src: cedarFenceGate, alt: "Custom cedar fence gate with black hardware", category: "Other" },
+  { src: archedWindowsExterior, alt: "Large arched window installation on home exterior", category: "Other" },
+  { src: fireplaceMarbleSurround, alt: "Fireplace with marble tile surround and mantel", category: "Other" },
+  { src: screenedPorch, alt: "Screened-in porch with wood framing", category: "Other" },
 ];
 
 const Gallery = () => {
