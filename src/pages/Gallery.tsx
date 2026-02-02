@@ -12,15 +12,35 @@ import soakingTub from "@/assets/gallery/soaking-tub.jpg";
 import vesselSink from "@/assets/gallery/vessel-sink.jpg";
 import kitchenIsland from "@/assets/gallery/kitchen-island.jpg";
 import stoveBacksplash from "@/assets/gallery/stove-backsplash.jpg";
+import basementFlooring from "@/assets/gallery/basement-flooring.jpg";
+import whiteUpperCabinets from "@/assets/gallery/white-upper-cabinets.jpg";
+import whiteLowerCabinets from "@/assets/gallery/white-lower-cabinets.jpg";
+import kitchenCabinetDetail from "@/assets/gallery/kitchen-cabinet-detail.jpg";
+import grayWainscotingBathroom from "@/assets/gallery/gray-wainscoting-bathroom.jpg";
+import modernGlassShower from "@/assets/gallery/modern-glass-shower.jpg";
+import basementEgress from "@/assets/gallery/basement-egress.jpg";
+import grayVanityBathroom from "@/assets/gallery/gray-vanity-bathroom.jpg";
+import doubleVanityBlackFixtures from "@/assets/gallery/double-vanity-black-fixtures.jpg";
+import luxuryMarbleShower from "@/assets/gallery/luxury-marble-shower.jpg";
 
 const galleryImages = [
   { src: elevatedDeck, alt: "Elevated deck with black railings and white skirting", category: "Deck" },
+  { src: luxuryMarbleShower, alt: "Luxury walk-in shower with marble tile and rain showerhead", category: "Bathroom" },
+  { src: doubleVanityBlackFixtures, alt: "Double vanity with black fixtures and industrial lighting", category: "Bathroom" },
+  { src: modernGlassShower, alt: "Modern glass shower with wave tile and hexagon floor", category: "Bathroom" },
   { src: soakingTub, alt: "Freestanding soaking tub with blue wainscoting", category: "Bathroom" },
   { src: doubleVanity, alt: "Modern double vanity bathroom with vessel sinks", category: "Bathroom" },
   { src: vesselSink, alt: "Custom vessel sink with hexagon tile backsplash", category: "Bathroom" },
+  { src: grayVanityBathroom, alt: "Gray bathroom with dark vanity and wainscoting", category: "Bathroom" },
+  { src: grayWainscotingBathroom, alt: "Bathroom with gray wainscoting and nickel fixtures", category: "Bathroom" },
   { src: kitchenIsland, alt: "Open kitchen with island seating and pendant lights", category: "Kitchen" },
   { src: kitchenCorner, alt: "Kitchen corner with floating shelves and marble countertops", category: "Kitchen" },
   { src: stoveBacksplash, alt: "Stovetop with decorative tile medallion backsplash", category: "Kitchen" },
+  { src: whiteUpperCabinets, alt: "Refinished white upper kitchen cabinets", category: "Kitchen" },
+  { src: whiteLowerCabinets, alt: "White lower cabinets with marble countertop", category: "Kitchen" },
+  { src: kitchenCabinetDetail, alt: "Kitchen cabinet detail with black hardware", category: "Kitchen" },
+  { src: basementFlooring, alt: "Finished basement with LVP flooring and recessed lighting", category: "Other" },
+  { src: basementEgress, alt: "Basement room with egress window", category: "Other" },
 ];
 
 const Gallery = () => {
