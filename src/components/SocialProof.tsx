@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     name: "Michelle Compton",
-    location: "Galena, Ohio",
+    location: "Galena",
     photo: michellePhoto,
     text: "The owner, Tyler, recently redid our deck and we are thrilled with the outcome. Tyler and his staff were friendly, hard working, professional, awesome at demolition and project clean up, and Tyler was very good at communicating. We will definitely use Stark Remodel for future projects!",
   },
@@ -82,7 +82,7 @@ export function SocialProof() {
                           src={testimonial.photo}
                           alt={`${testimonial.name} - Stark Remodel customer from ${testimonial.location}`}
                           className={`w-14 h-14 rounded-full border-2 border-border ${
-                            testimonial.isLogo ? "object-contain bg-foreground p-1" : "object-cover"
+                            testimonial.isLogo ? "object-contain bg-white p-1" : "object-cover"
                           }`}
                         />
                         <div>
