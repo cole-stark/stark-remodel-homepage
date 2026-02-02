@@ -6,8 +6,6 @@ import logo from "@/assets/StarkRemodel_2024.png";
 
 const navLinks = [
   { href: "#services", label: "Services" },
-  { href: "#process", label: "Process" },
-  { href: "#reviews", label: "Reviews" },
   { href: "/gallery", label: "Gallery", isRoute: true },
   { href: "#contact", label: "Contact" },
 ];
