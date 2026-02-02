@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -22,8 +22,12 @@ const projectTypes = [
   "Other",
 ];
 
+// Web3Forms access key - this is safe to expose as it only accepts form submissions
+const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+
 export function ContactCTA() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     contact: "",
@@ -31,14 +35,47 @@ export function ContactCTA() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // For now, just show a success message
-    toast({
-      title: "Thank you!",
-      description: "We'll be in touch soon to discuss your project.",
-    });
-    setFormData({ name: "", contact: "", projectType: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New Project Inquiry: ${formData.projectType || "General"}`,
+          from_name: formData.name,
+          name: formData.name,
+          email: formData.contact,
+          project_type: formData.projectType,
+          message: formData.message || "No additional message provided.",
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Thank you!",
+          description: "We'll be in touch soon to discuss your project.",
+        });
+        setFormData({ name: "", contact: "", projectType: "", message: "" });
+      } else {
+        throw new Error(result.message || "Failed to submit form");
+      }
+    } catch (error) {
+      toast({
+        title: "Something went wrong",
+        description: "Please try calling or emailing us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -136,8 +173,15 @@ export function ContactCTA() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full" size="lg">
-                  Send Request
+                <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    "Send Request"
+                  )}
                 </Button>
 
                 <p className="text-center text-sm text-muted-foreground">
