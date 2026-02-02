@@ -32,9 +32,20 @@ import wetBarFloatingShelves from "@/assets/gallery/wet-bar-floating-shelves.jpg
 import goldRainShower from "@/assets/gallery/gold-rain-shower.jpg";
 import greenTileGoldShower from "@/assets/gallery/green-tile-gold-shower.jpg";
 import blueWainscotingBathroom from "@/assets/gallery/blue-wainscoting-bathroom.jpg";
+import compositeDeckBlackRailing from "@/assets/gallery/composite-deck-black-railing.jpg";
+import cedarFenceGate from "@/assets/gallery/cedar-fence-gate.jpg";
+import largeDeckWhiteRailing from "@/assets/gallery/large-deck-white-railing.jpg";
+import compositeBridgePond from "@/assets/gallery/composite-bridge-pond.jpg";
+import geometricTileNiche from "@/assets/gallery/geometric-tile-niche.jpg";
+import entryStepsWhiteRailing from "@/assets/gallery/entry-steps-white-railing.jpg";
+import greenTileWalkInShower from "@/assets/gallery/green-tile-walk-in-shower.jpg";
 
 const galleryImages = [
   { src: elevatedDeck, alt: "Elevated deck with black railings and white skirting", category: "Deck" },
+  { src: compositeDeckBlackRailing, alt: "Composite deck with black metal railings and stairs", category: "Deck" },
+  { src: largeDeckWhiteRailing, alt: "Large deck with white railings and wide stairs", category: "Deck" },
+  { src: compositeBridgePond, alt: "Composite bridge over backyard pond", category: "Deck" },
+  { src: entryStepsWhiteRailing, alt: "Entry steps with white railing and composite treads", category: "Deck" },
   { src: luxuryMarbleShower, alt: "Luxury walk-in shower with marble tile and rain showerhead", category: "Bathroom" },
   { src: doubleVanityBlackFixtures, alt: "Double vanity with black fixtures and industrial lighting", category: "Bathroom" },
   { src: modernGlassShower, alt: "Modern glass shower with wave tile and hexagon floor", category: "Bathroom" },
@@ -51,6 +62,8 @@ const galleryImages = [
   { src: goldRainShower, alt: "White ribbed tile shower with gold rain showerhead", category: "Bathroom" },
   { src: greenTileGoldShower, alt: "Green tile shower with gold fixtures and window", category: "Bathroom" },
   { src: blueWainscotingBathroom, alt: "Bathroom with blue wainscoting and glass shower", category: "Bathroom" },
+  { src: geometricTileNiche, alt: "Geometric pattern tile with built-in shower niche", category: "Bathroom" },
+  { src: greenTileWalkInShower, alt: "Large walk-in shower with green tile and gold fixtures", category: "Bathroom" },
   { src: kitchenIsland, alt: "Open kitchen with island seating and pendant lights", category: "Kitchen" },
   { src: kitchenCorner, alt: "Kitchen corner with floating shelves and marble countertops", category: "Kitchen" },
   { src: stoveBacksplash, alt: "Stovetop with decorative tile medallion backsplash", category: "Kitchen" },
@@ -61,6 +74,7 @@ const galleryImages = [
   { src: basementEgress, alt: "Basement room with egress window", category: "Other" },
   { src: crownMoldingDetail, alt: "Custom black crown molding detail", category: "Other" },
   { src: wetBarFloatingShelves, alt: "Wet bar with floating shelves and wine fridge", category: "Other" },
+  { src: cedarFenceGate, alt: "Custom cedar fence gate with black hardware", category: "Other" },
 ];
 
 const Gallery = () => {
