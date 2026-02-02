@@ -22,6 +22,16 @@ import basementEgress from "@/assets/gallery/basement-egress.jpg";
 import grayVanityBathroom from "@/assets/gallery/gray-vanity-bathroom.jpg";
 import doubleVanityBlackFixtures from "@/assets/gallery/double-vanity-black-fixtures.jpg";
 import luxuryMarbleShower from "@/assets/gallery/luxury-marble-shower.jpg";
+import crownMoldingDetail from "@/assets/gallery/crown-molding-detail.jpg";
+import marbleVanityShower from "@/assets/gallery/marble-vanity-shower.jpg";
+import marbleShowerMirror from "@/assets/gallery/marble-shower-mirror.jpg";
+import waveTileSoakingTub from "@/assets/gallery/wave-tile-soaking-tub.jpg";
+import marbleTileShower from "@/assets/gallery/marble-tile-shower.jpg";
+import blueVanityRoundMirror from "@/assets/gallery/blue-vanity-round-mirror.jpg";
+import wetBarFloatingShelves from "@/assets/gallery/wet-bar-floating-shelves.jpg";
+import goldRainShower from "@/assets/gallery/gold-rain-shower.jpg";
+import greenTileGoldShower from "@/assets/gallery/green-tile-gold-shower.jpg";
+import blueWainscotingBathroom from "@/assets/gallery/blue-wainscoting-bathroom.jpg";
 
 const galleryImages = [
   { src: elevatedDeck, alt: "Elevated deck with black railings and white skirting", category: "Deck" },
@@ -33,6 +43,14 @@ const galleryImages = [
   { src: vesselSink, alt: "Custom vessel sink with hexagon tile backsplash", category: "Bathroom" },
   { src: grayVanityBathroom, alt: "Gray bathroom with dark vanity and wainscoting", category: "Bathroom" },
   { src: grayWainscotingBathroom, alt: "Bathroom with gray wainscoting and nickel fixtures", category: "Bathroom" },
+  { src: marbleVanityShower, alt: "Marble shower with black vanity and industrial lighting", category: "Bathroom" },
+  { src: marbleShowerMirror, alt: "Marble shower with rain showerhead and black fixtures", category: "Bathroom" },
+  { src: waveTileSoakingTub, alt: "Freestanding tub with wave tile accent wall", category: "Bathroom" },
+  { src: marbleTileShower, alt: "Walk-in shower with marble tile walls and hexagon floor", category: "Bathroom" },
+  { src: blueVanityRoundMirror, alt: "Blue vanity with round backlit mirror and vessel sink", category: "Bathroom" },
+  { src: goldRainShower, alt: "White ribbed tile shower with gold rain showerhead", category: "Bathroom" },
+  { src: greenTileGoldShower, alt: "Green tile shower with gold fixtures and window", category: "Bathroom" },
+  { src: blueWainscotingBathroom, alt: "Bathroom with blue wainscoting and glass shower", category: "Bathroom" },
   { src: kitchenIsland, alt: "Open kitchen with island seating and pendant lights", category: "Kitchen" },
   { src: kitchenCorner, alt: "Kitchen corner with floating shelves and marble countertops", category: "Kitchen" },
   { src: stoveBacksplash, alt: "Stovetop with decorative tile medallion backsplash", category: "Kitchen" },
@@ -41,6 +59,8 @@ const galleryImages = [
   { src: kitchenCabinetDetail, alt: "Kitchen cabinet detail with black hardware", category: "Kitchen" },
   { src: basementFlooring, alt: "Finished basement with LVP flooring and recessed lighting", category: "Other" },
   { src: basementEgress, alt: "Basement room with egress window", category: "Other" },
+  { src: crownMoldingDetail, alt: "Custom black crown molding detail", category: "Other" },
+  { src: wetBarFloatingShelves, alt: "Wet bar with floating shelves and wine fridge", category: "Other" },
 ];
 
 const Gallery = () => {
