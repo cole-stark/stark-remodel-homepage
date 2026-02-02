@@ -22,8 +22,9 @@ const projectTypes = [
   "Other",
 ];
 
-// Web3Forms access key - this is safe to expose as it only accepts form submissions
-const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+// Web3Forms access key - safe to expose as it only accepts form submissions
+// Replace this with your actual key from https://web3forms.com
+const WEB3FORMS_ACCESS_KEY = "YOUR_ACTUAL_KEY_HERE";
 
 export function ContactCTA() {
   const { toast } = useToast();
