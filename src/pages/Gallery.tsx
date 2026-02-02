@@ -45,6 +45,7 @@ import fireplaceMarbleSurround from "@/assets/gallery/fireplace-marble-surround.
 import calacattaMarbleShower from "@/assets/gallery/calacatta-marble-shower.jpg";
 import grayDeckBlackRailing from "@/assets/gallery/gray-deck-black-railing.jpg";
 import screenedPorch from "@/assets/gallery/screened-porch.jpg";
+import backyardDeckPatio from "@/assets/gallery/backyard-deck-patio.jpg";
 
 const galleryImages = [
   { src: elevatedDeck, alt: "Elevated deck with black railings and white skirting", category: "Deck" },
@@ -53,6 +54,7 @@ const galleryImages = [
   { src: compositeBridgePond, alt: "Composite bridge over backyard pond", category: "Deck" },
   { src: entryStepsWhiteRailing, alt: "Entry steps with white railing and composite treads", category: "Deck" },
   { src: grayDeckBlackRailing, alt: "Gray composite deck with black metal railings", category: "Deck" },
+  { src: backyardDeckPatio, alt: "Backyard composite deck with patio furniture", category: "Deck" },
   { src: luxuryMarbleShower, alt: "Luxury walk-in shower with marble tile and rain showerhead", category: "Bathroom" },
   { src: doubleVanityBlackFixtures, alt: "Double vanity with black fixtures and industrial lighting", category: "Bathroom" },
   { src: modernGlassShower, alt: "Modern glass shower with wave tile and hexagon floor", category: "Bathroom" },
