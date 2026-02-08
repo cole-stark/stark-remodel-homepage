@@ -39,7 +39,7 @@ const services = [
   },
   {
     title: "Other",
-    description: "Custom built-ins, fireplaces, and specialty projects tailored to your vision.",
+    description: "Basement remodels, custom built-ins, and specialty projects tailored to your vision.",
     image: otherImage,
     alt: "Custom entertainment center with stone fireplace and built-in shelving",
   },
